@@ -5,17 +5,17 @@
 
 int main() {
     cv::namedWindow("Image");
-    cv::Mat image = cv::imread("images/puppy.bmp");
-    cv::Mat logo = cv::imread("images/smalllogo.png");
+    cv::Mat image = cv::imread("puppy.bmp");
+    cv::Mat logo = cv::imread("smalllogo.png");
 
     cv::Mat imageROI(image, cv::Rect(image.cols-logo.cols, image.rows-image.rows, logo.cols, logo.rows));
 
     logo.copyTo(imageROI);
 
-    cv::imshow("Imagess", image);
+    cv::imshow("Images", image);
 
   cv::waitKey(0);
-    image = cv::imread("images/puppy.bmp");
+    image = cv::imread("puppy.bmp");
 
     imageROI= image(cv::Rect(image.cols-logo.cols,image.rows-logo.rows, logo.cols, logo.rows));
 

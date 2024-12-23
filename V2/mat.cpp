@@ -41,7 +41,7 @@ cv::waitKey(0);
 
 cv::Mat gray= function();
 
-image1= cv::imread("tesst.jpeg", cv::IMREAD_GRAYSCALE);
+image1= cv::imread("ilyes.jpg", cv::IMREAD_GRAYSCALE);
 
 image1.convertTo(image2, CV_32F, 1/255.0, 0.0);
 
