@@ -41,7 +41,22 @@ Les autres pixels sont définis à 0 (noir).
     thresholded = 255 - thresholded;
     cv::imwrite("binary.bmp", thresholded);
 
-    cv::waitKey(0);
 
+   cv::Mat str = h.stretch(image, 0.01);
+    cv::imshow("Stretched Image", str);
+
+    cv::namedWindow("Stretched H");
+    cv::imshow("Stretched H", h.getHistogramImage(str));
+
+    // Créer une table de correspondance pour l'image négative
+    cv::Mat lut(1, 256, CV_8U);
+    for (int i = 0; i < 256; i++) {
+        lut.at<uchar>(i) = 255 - i;
+    }
+
+    cv::namedWindow("Negative image");
+    cv::imshow("Negative image", h.applyLookUp(image, lut));
+
+    cv::waitKey();
     return 0;
 }

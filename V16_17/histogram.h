@@ -59,13 +59,13 @@ class Histogram1D {
 
             int imin = 0;
             for (float count =0.0; imin < 256; imin++) {
-                if (count+=hist.at<float>(imin) >= number)
+                if ((count+=hist.at<float>(imin)) >= number)
                     break;
             }
 
             int imax = 255;
             for (float count=0.0; imax >= 0; imax--) {
-                if (count += hist.at<float>(imax) > number)
+                if ((count += hist.at<float>(imax)) > number)
                     break;
             }
 
@@ -80,6 +80,8 @@ class Histogram1D {
 
             cv::Mat result;
             result = applyLookUp(image, lookup);
+
+            
 
             return result;
         }
@@ -109,6 +111,20 @@ class Histogram1D {
         static cv::Mat applyLookUp(const cv::Mat& image, const cv::Mat& lookup) {
             cv::Mat result;
             cv::LUT(image, lookup, result);
+            return result;
+        }
+
+        static cv::Mat applyLookUpWithIterator(const cv::Mat& image, const cv::Mat& lookup) {
+            cv::Mat result(image.rows, image.cols, CV_8U);
+            cv::Mat_<uchar>::iterator itr = result.begin<uchar>();
+
+            cv::Mat_<uchar>::const_iterator it = image.begin<uchar>();
+            cv::Mat_<uchar>::const_iterator itend = image.end<uchar>();
+
+            for (; it != itend; ++it, ++itr) {
+                *itr = lookup.at<uchar>(*it);
+            }
+
             return result;
         }
 
