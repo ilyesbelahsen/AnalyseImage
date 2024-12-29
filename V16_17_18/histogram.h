@@ -107,6 +107,13 @@ class Histogram1D {
             }
             return histImg;
         }
+        
+        static cv::Mat equalize(const cv::Mat &image){
+            cv::Mat result;
+            cv::equalizeHist(image, result);
+
+            return result;
+        }
 
         static cv::Mat applyLookUp(const cv::Mat& image, const cv::Mat& lookup) {
             cv::Mat result;

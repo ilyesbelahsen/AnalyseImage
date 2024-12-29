@@ -57,6 +57,14 @@ Les autres pixels sont définis à 0 (noir).
     cv::namedWindow("Negative image");
     cv::imshow("Negative image", h.applyLookUp(image, lut));
 
+    cv::Mat equalizedImage = h.equalize(image);
+
+    cv::namedWindow("Equalized Image");
+    cv::imshow("Equalized Image", equalizedImage);
+
+    cv::namedWindow("Equalized H");
+    cv::imshow("Equalized H", h.getHistogramImage(equalizedImage));
+
     cv::waitKey();
     return 0;
 }
