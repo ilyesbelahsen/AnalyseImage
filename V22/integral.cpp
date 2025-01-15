@@ -4,7 +4,6 @@
 #include <iostream>
 #include "integral.h"
 
-// video 22 8:34
 
 int main() {
     cv::Mat image = cv::imread("book.jpg", 0);
