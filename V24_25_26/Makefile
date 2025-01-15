@@ -3,7 +3,7 @@ CXXFLAGS = -Wall -g $(shell pkg-config --cflags opencv4)
 LDFLAGS = $(shell pkg-config --libs opencv4)
 
 TARGET = main
-SRCS = integral.cpp
+SRCS = morphology.cpp
 
 all: $(TARGET)
 
