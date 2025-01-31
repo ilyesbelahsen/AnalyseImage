@@ -1,0 +1,120 @@
+Image : elephant_3 méthode utilisé : Canny
+contours détectés : 3681
+contours référence : 260324
+contours corrects : 2997
+faux positifs : 684
+faux négatifs : 257327
+performance : 1.14824 %
+taux faux positifs : 0.262061 %
+taux faux negatifs : 98.5897 %
+---------------------------------------
+Image : goat_5 méthode utilisé : Canny
+contours détectés : 11047
+contours référence : 260117
+contours corrects : 10494
+faux positifs : 553
+faux négatifs : 249623
+performance : 4.02578 %
+taux faux positifs : 0.212146 %
+taux faux negatifs : 95.7621 %
+---------------------------------------
+Image : bear_5 méthode utilisé : Canny
+contours détectés : 4156
+contours référence : 260610
+contours corrects : 3797
+faux positifs : 359
+faux négatifs : 256813
+performance : 1.45496 %
+taux faux positifs : 0.137564 %
+taux faux negatifs : 98.4075 %
+---------------------------------------
+Image : goat_8 méthode utilisé : Canny
+contours détectés : 9165
+contours référence : 259216
+contours corrects : 8295
+faux positifs : 870
+faux négatifs : 250921
+performance : 3.18933 %
+taux faux positifs : 0.334505 %
+taux faux negatifs : 96.4762 %
+---------------------------------------
+Image : elephant_3 méthode utilisé : Laplacian
+contours détectés : 248303
+contours référence : 260324
+contours corrects : 246544
+faux positifs : 1759
+faux négatifs : 13780
+performance : 94.071 %
+taux faux positifs : 0.671161 %
+taux faux negatifs : 5.25788 %
+---------------------------------------
+Image : goat_5 méthode utilisé : Laplacian
+contours détectés : 243456
+contours référence : 260117
+contours corrects : 241103
+faux positifs : 2353
+faux négatifs : 19014
+performance : 91.8593 %
+taux faux positifs : 0.896483 %
+taux faux negatifs : 7.24426 %
+---------------------------------------
+Image : bear_5 méthode utilisé : Laplacian
+contours détectés : 235560
+contours référence : 260610
+contours corrects : 234186
+faux positifs : 1374
+faux négatifs : 26424
+performance : 89.3894 %
+taux faux positifs : 0.52446 %
+taux faux negatifs : 10.0861 %
+---------------------------------------
+Image : goat_8 méthode utilisé : Laplacian
+contours détectés : 230649
+contours référence : 259216
+contours corrects : 227748
+faux positifs : 2901
+faux négatifs : 31468
+performance : 86.8879 %
+taux faux positifs : 1.10676 %
+taux faux negatifs : 12.0053 %
+---------------------------------------
+Image : elephant_3 méthode utilisé : Sobel
+contours détectés : 258098
+contours référence : 260324
+contours corrects : 255314
+faux positifs : 2784
+faux négatifs : 5010
+performance : 97.0377 %
+taux faux positifs : 1.05812 %
+taux faux negatifs : 1.90416 %
+---------------------------------------
+Image : goat_5 méthode utilisé : Sobel
+contours détectés : 259912
+contours référence : 260117
+contours corrects : 256849
+faux positifs : 3063
+faux négatifs : 3268
+performance : 97.5944 %
+taux faux positifs : 1.16384 %
+taux faux negatifs : 1.24174 %
+---------------------------------------
+Image : bear_5 méthode utilisé : Sobel
+contours détectés : 261243
+contours référence : 260610
+contours corrects : 259152
+faux positifs : 2091
+faux négatifs : 1458
+performance : 98.649 %
+taux faux positifs : 0.795962 %
+taux faux negatifs : 0.555004 %
+---------------------------------------
+Image : goat_8 méthode utilisé : Sobel
+contours détectés : 258692
+contours référence : 259216
+contours corrects : 254312
+faux positifs : 4380
+faux négatifs : 4904
+performance : 96.4779 %
+taux faux positifs : 1.66163 %
+taux faux negatifs : 1.86042 %
+---------------------------------------
