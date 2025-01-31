@@ -1,0 +1,5 @@
+Pour compiler et executer, tapez la commande suivante : 
+./script
+
+si erreur, convertir le script en format Unix :
+dos2unix script
